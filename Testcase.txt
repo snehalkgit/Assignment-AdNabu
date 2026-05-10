@@ -20,5 +20,4 @@ Task 1 – Test Design
 | AC_006 | Add product with maximum quantity (Edge Case)    | Add product until limit reached                 | System should enforce quantity limit properly |
 
 //Git Repo 
-https://github.com/your-username/adnabu-playwright-automation
-
+https://github.com/snehalkgit/Assignment-AdNabu.git
