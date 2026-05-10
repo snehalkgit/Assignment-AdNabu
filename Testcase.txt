@@ -1,0 +1,24 @@
+Task 1 – Test Design
+ 1 Product Search – Test Cases
+ | TC ID  | Test Scenario                               | Steps                                                   | Expected Result                               |
+| PS_001 | Search valid product                        | Enter valid product name in search bar and click search | Relevant product should be displayed          |
+| PS_002 | Search with partial keyword                 | Enter partial product keyword                           | Matching products should appear               |
+| PS_003 | Search non-existing product (Negative)      | Enter random invalid product name                       | “No products found” message should display    |
+| PS_004 | Search with empty input (Negative)          | Click search without entering any value                 | Validation message OR all products displayed  |
+| PS_005 | Search using special characters (Edge Case) | Enter `@#$%^&*` in search field                         | System should handle gracefully without crash |
+| PS_006 | Search with very long input (Edge Case)     | Enter 200+ character string                             | Search should not break UI or crash           |
+
+
+
+2 Add to Cart – Test Cases
+| TC ID  | Test Scenario                                    | Steps                                           | Expected Result                               |
+| AC_001 | Add product to cart successfully                 | Open product and click Add to Cart              | Product should be added to cart               |
+| AC_002 | Add multiple quantities                          | Increase quantity and add to cart               | Correct quantity should appear in cart        |
+| AC_003 | Add out-of-stock product (Negative)              | Try adding unavailable product                  | Proper error/disabled button should display   |
+| AC_004 | Add same product multiple times                  | Add same item repeatedly                        | Cart should update quantity correctly         |
+| AC_005 | Add product without selecting variant (Negative) | Skip size/color selection and click Add to Cart | Validation message should appear              |
+| AC_006 | Add product with maximum quantity (Edge Case)    | Add product until limit reached                 | System should enforce quantity limit properly |
+
+//Git Repo 
+https://github.com/your-username/adnabu-playwright-automation
+
